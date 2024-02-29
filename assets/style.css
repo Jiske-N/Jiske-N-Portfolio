@@ -137,6 +137,10 @@ header {
     margin: 0 8rem 3.5rem 0;
 }
 
+article:not(article:first-of-type) {
+    padding-top: 3rem;
+}
+
 /* making imgs take all available space in the sections */
 aside img {
     object-fit: cover;
@@ -156,11 +160,21 @@ aside img {
 
 .textbox {
     position: absolute;
-    bottom: 10rem;
+    padding: 1rem 1rem 0 0;
+    bottom: 15%;
     z-index: 2;
     background-color: var(--background-color-main);
 }
 
+/* make cards into links */
+.project-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
 /* footer although as I was following the mockup it's actually part of the body */
 .row {
     display: flex;
@@ -203,7 +217,6 @@ aside img {
     list-style: none;
     padding: 3rem;
 }
-
 
 @media screen and (min-width: 992px) {
     .project {
