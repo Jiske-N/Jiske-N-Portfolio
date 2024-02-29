@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <!-- no css reset consider adding in the future -->
 </head>
 
 <body>
@@ -12,33 +13,42 @@
         <div class="main-heading">
             <h1>Jiske Nicolson</h1>
         </div>
-        <div class="links">
+        <nav class="links">
             <ul>
                 <li>
-                    <a href="#about-me">About Me</a>
+                    <a href="#about-me">
+                        <h6>About Me</h6>
+                    </a>
                 </li>
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="#work">
+                        <h6>Work</h6>
+                    </a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="#contact-me">
+                        <h6>Contact Me</h6>
+                    </a>
                 </li>
                 <li>
-                    <a href="https://www.google.com/search?client=opera&q=resume&sourceid=opera&ie=UTF-8&oe=UTF-8">Resume</a>
+                    <!-- note this is a placeholder link -->
+                    <a href="https://www.google.com/search?client=opera&q=resume&sourceid=opera&ie=UTF-8&oe=UTF-8">
+                        <h6>Resume</h6>
+                    </a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <main>
         <!-- section for background image secondary title and aria-label -->
-        <div class="hero-image">
+        <section class="hero-image" aria-label="background image of condensation on a leaf">
             <div class="hero-title">
                 <h2>I'm the best skier on the mountain!</h2>
             </div>
-        </div>
-        <div class="sections">
-            <section id="about-me" class="row about-me">
+        </section>
+        <body>
+            <section class="row">
                 <div class="left-col">
                     <h3>About Me</h3>
                 </div>
@@ -53,7 +63,8 @@
                     </article>
                 </div>
             </section>
-            <section id="work" class="row work">
+            <section class="row">
+                <!-- most links for projects are currently placeholders -->
                 <div class="left-col">
                     <h3>Work</h3>
                 </div>
@@ -100,21 +111,31 @@
                     </aside>
                 </div>
             </section>
-            <footer id="contact-me" class="row contact-me">
+            <footer class="row">
                 <div class="left-col">
                     <h3>Contact Me</h3>
                 </div>
                 <div class="right-col">
-                    <ul class="footer-links">
-                        <li><a href="tel:+61123456789">Phone</a></li>
-                        <li><a href="mailto:email@gmail.com">Email</a></li>
-                        <li><a href="https://github.com/Jiske-N">Github</a></li>
-                        <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
-                        <li><a href="https://open.spotify.com">Spotify</a></li>
-                    </ul>
+                    <nav class="footer-links">
+                        <a href="tel:+61123456789">
+                            <h5>Phone</h5>
+                        </a>
+                        <a href="mailto:email@gmail.com">
+                            <h5>Email</h5>
+                        </a>
+                        <a href="https://github.com/Jiske-N">
+                            <h5>Github</h5>
+                        </a>
+                        <a href="https://twitter.com/?lang=en">
+                            <h5>Twitter</h5>
+                        </a>
+                        <a href="https://open.spotify.com">
+                            <h5>Spotify</h5>
+                        </a>
+                    </nav>
                 </div>
             </footer>
-        </div>
+        </body>
     </main>
 </body>
 </html>
