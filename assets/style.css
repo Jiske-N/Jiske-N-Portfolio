@@ -2,8 +2,9 @@
 
 /* variables for example main colour scheme for the page */
 :root {
-    --background-color-main: darkgrey;
-    --background-color-secondary: rgb(96, 148, 184);
+    --background-color-main: rgb(96, 148, 184);
+    --background-color-secondary: rgb(54, 54, 54);
+    --background-color-tertiary: darkgray;
     --text-color-main: black;
     --text-color-secondary: var(--background-color-secondary);
 }
@@ -41,12 +42,12 @@ h6 {
 
 /* specific text values */
 h1 {
-    color: var(--text-color-main);
+    color: var(--text-color-secondary);
     font-size: 4rem;
 }
 
 h2 {
-    color: var(--text-color-main);
+    color: var(--text-color-secondary);
     font-size: 3.5rem;
 }
 
@@ -66,7 +67,7 @@ h5 {
 }
 
 h6 {
-    color: var(--text-color-main);
+    color: var(--background-color-main);
     font-size: 1.5rem;
 }
 
@@ -108,8 +109,12 @@ header {
 }
 
 .links a {
-    text-decoration: underline;
-    color: var(--text-color-main);
+    text-decoration: none;
+}
+
+.links a h6 { 
+    font-size: 2rem;
+    color: var(--background-color-main);
 }
 
 /* body */
@@ -136,7 +141,7 @@ header {
     align-items: center;
     background-color: var(--background-color-main);
     line-height: 3.5rem;
-    padding: 0 0.5rem;
+    padding: 1rem 1.5rem;
     margin: 0 8rem 3.5rem 0;
 }
 
