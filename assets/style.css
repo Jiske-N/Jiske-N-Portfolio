@@ -1,5 +1,3 @@
-
-
 /* variables for example main colour scheme for the page */
 :root {
     --background-color-main: rgb(96, 148, 184);
@@ -112,7 +110,7 @@ header {
     text-decoration: none;
 }
 
-.links a h6 { 
+.links h6 { 
     font-size: 2rem;
     color: var(--background-color-main);
 }
