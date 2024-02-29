@@ -69,10 +69,6 @@ h6 {
     font-size: 1.5rem;
 }
 
-p {
-    /* font-size: 1rem; -DON'T NEED TO SPECIFY- */
-}
-
 /* Header and components */
 header {
     background-color: var(--background-color-secondary);
